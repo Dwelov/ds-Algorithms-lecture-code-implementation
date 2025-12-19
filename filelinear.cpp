@@ -33,12 +33,14 @@ string searchTheWord(const string& filePath, const string& lookupWord) {
         cerr << "Error opening the file: " << filePath << endl;
         return "";
     }
-
-    string word;
+    
+   string word;
+    int index = 0; // word counter
     while (file >> word) {
+        index++; // increment for each word read
         if (lookupWord == word) {
             file.close();
-            return "The specific word was found";
+            return "The word '" + lookupWord + "' was found at position " + to_string(index);
         }
     }
 
