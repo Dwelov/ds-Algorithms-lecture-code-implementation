@@ -1,0 +1,5 @@
+so first i will explain you how this linear search works to search the specific line in the file
+first you enter the line you want to search in the file
+then the program will open the file and read it line by line
+if the line is found it will return the line
+if the line is not found it will return a message saying the line is not found
